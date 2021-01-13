@@ -45,17 +45,6 @@ public class TambahMatakuliahActivity extends AppCompatActivity implements View.
 
     @Override
     public void onClick(View v) {
-        switch (view.getId()) {
-            case R.id.btn_tambah:
-                addOrUpdate();
-                if (mahasiswa.getId() == 0) {
-                    dao.insertData(mahasiswa);
-                } else {
-                    dao.update(mahasiswa);
-                }
 
-                Toast.makeText(this, btnTambah.getText().toString(), Toast.LENGTH_SHORT).show();
-                finish();
-                break;
     }
 }

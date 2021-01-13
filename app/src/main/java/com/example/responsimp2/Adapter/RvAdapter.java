@@ -107,7 +107,7 @@ public class RvAdapter extends RecyclerView.Adapter<RvAdapter.ViewHolder>{
             super(itemView);
 
 
-            tvNama = itemView.findViewById(R.id.tv_nama);
+
             tvNim = itemView.findViewById(R.id.tv_nim);
             btnHapus = itemView.findViewById(R.id.btn_hapus);
             imageView = itemView.findViewById(R.id.image);
@@ -116,32 +116,6 @@ public class RvAdapter extends RecyclerView.Adapter<RvAdapter.ViewHolder>{
             btnHapus.setOnClickListener(this);
         }
 
-        void bind(MataKuliah data, DataListListener listener) {
-            this.data = data;
-            this.listener = listener;
-
-            tvNama.setText(data.getNamamatakuliah());
-            tvNim.setText(data.getSemester());
-
-
-        }
-
-        @Override
-        public void onClick(View view) {
-            if (view.getId() == R.id.btn_hapus) {
-
-                CrudRoomApp.getInstance().getDataBase().userDao().delete(data);
-                listener.onRemoveClick(data);
-                Toast.makeText(itemView.getContext(), "Berhasil Dihapus", Toast.LENGTH_SHORT).show();
-
-            } else if (view.getId() == R.id.item_list) {
-
-                Intent intent = new Intent(itemView.getContext(), TambahMatakuliahActivity.class);
-                intent.putExtra(TambahMatakuliahActivity.TAG_DATA_INTENT, data.getId());
-                itemView.getContext().startActivity(intent);
-
-            }
-        }
 
 
     }

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/images"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ic_cloud"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AMIKOM"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/images"/>
+
+    <TextView
+        android:id="@+id/tvsignin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@id/images"/>
+
+    <TextView
+        android:id="@+id/hi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/tvsignin"
+        android:text="Hi.. There ! Nice too see you again"/>
+
+    <TextView
+        android:id="@+id/emailtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_marginTop="30dp"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="sans-serif-black"
+        android:layout_below="@id/hi"
+        android:textColor="@color/pink"/>
+
+    <EditText
+        android:id="@+id/etemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailtext"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:id="@+id/passwordtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_marginTop="30dp"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="sans-serif-black"
+        android:layout_below="@id/etemail"
+        android:textColor="@color/pink"/>
+
+    <EditText
+        android:id="@+id/etpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_eye"
+        android:layout_below="@id/passwordtext"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:fontFamily="sans-serif-black"
+        android:text="SIGN IN"
+        android:layout_margin="20dp"
+        android:layout_below="@id/etpassword"/>
+
+    <TextView
+        android:id="@+id/txforgot"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password ? "/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="45dp"
+        android:text="Sign Up "
+        android:textColor="@color/pink" />
+
+
+</RelativeLayout>

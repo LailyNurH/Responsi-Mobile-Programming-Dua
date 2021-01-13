@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ResponsiMP2</string>
+    <string name="terms">I agree to the  <b><font fgcolor="#F44336">Terms of Service.</font></b><font fgcolor="#F44336">Privacy Polices</font></string>
+    <string name="akun">Have an Account ? <b><font fgcolor="#3CDA85">Sign Up.</font></b></string>
+</resources>

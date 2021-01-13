@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.TambahMatakuliahActivity">
+
+    <EditText
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/etmatakuliah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mata Kuliah"
+        tools:ignore="Autofill,HardcodedText,TextFields" />
+
+    <EditText
+        android:layout_below="@+id/etmatakuliah"
+        android:id="@+id/etSemester"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Semester"
+        android:inputType="number"
+        tools:ignore="Autofill,HardcodedText,TextFields" />
+
+    <Button
+        android:layout_below="@id/etSemester"
+        android:id="@+id/btn_save"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Simpan"
+        android:textAllCaps="false"
+        tools:ignore="HardcodedText" />
+
+
+</RelativeLayout>

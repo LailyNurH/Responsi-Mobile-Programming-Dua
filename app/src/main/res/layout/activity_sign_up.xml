@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.SignUpActivity">
+
+    <TextView
+        android:id="@+id/txsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:textSize="30dp"/>
+    <TextView
+        android:id="@+id/emailtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_marginTop="50dp"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="sans-serif-black"
+        android:layout_below="@id/txsignup"
+        android:textColor="@color/pink"/>
+
+    <EditText
+        android:id="@+id/etemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailtext"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:id="@+id/passwordtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_marginTop="30dp"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="sans-serif-black"
+        android:layout_below="@id/etemail"
+        android:textColor="@color/pink"/>
+
+    <EditText
+        android:id="@+id/etpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_eye"
+        android:layout_below="@id/passwordtext"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/etpassword"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/terms"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/etpassword"
+        android:layout_toRightOf="@id/checkbox"/>
+
+    <Button
+        android:id="@+id/btncontinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etpassword"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Continue"
+        android:textColor="#fff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btncontinue"
+        android:text="@string/akun"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
